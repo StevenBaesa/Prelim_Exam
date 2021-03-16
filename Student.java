@@ -1,26 +1,30 @@
-class Student {
+class Student
+{
+// the private data members
 private int IDnum;
 private int hours;
 private int points;
 private static int lastStudentID;
- }
-public void setIDnum()
+ 
+ 
+public void showIDnum()
 {
-lastStudentID += 1;
-IDnumber = lastStudentID;
+System.out.println("ID Num is: " + IDnum);
 }
  
-public int getIDnum()
+public void showHours()
 {
-return IDnum;
+System.out.println("Credit Hours: " + hours);
 }
  
-public void setHours(int num)
+public void showPoints()
 {
-hours = num;
+System.out.println("Points Earned: " + points);
 }
  
-public int getHours()
+public double getGradePoint()
 {
-return hours;
+return (double) (points / hours);
+}
+ 
 }
