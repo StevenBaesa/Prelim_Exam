@@ -1,10 +1,10 @@
 class Student
 {
 // the private data members
-private int IDnum;
-private int creds;
-private int points;
-private static int lastStudentID;
+public int IDnum;
+public int creds;
+public int points;
+public static int lastStudentID;
  
  
 public void showIDnum()
